@@ -6,7 +6,7 @@ body {
     background: url('/media/background-image.webp') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: #555555;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -21,6 +21,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    font-size: 1.5rem;
 }
 
 .main-logo-link {
