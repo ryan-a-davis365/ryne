@@ -14,7 +14,36 @@ The deployed site can be visited here: [RYNE](link to site)
     * [***Opportunities***](#opportunities)
     * [***Scope***](#scope)
     * [***Structure***](#structure)
-
+      * [**User Stories:**](#user-stories)
+        * [**EPIC 1 - Set up and Deployment:**](#epic-1---set-up-and-deployment)
+        * [**EPIC 2 - Viewing and Navigation:**](#epic-2---viewing-and-navigation)
+        * [**EPIC 3 - Sorting and Searching:**](#epic-3---sorting-and-searching)
+        * [**EPIC 4 - Registration and User Accounts:**](#epic-4---registration-and-user-accounts)
+        * [**EPIC 5 - Purchasing and Checkout:**](#epic-5---purchasing-and-checkout)
+        * [**EPIC 6 - Admin and Store Management:**](#epic-6---admin-and-store-management)
+        * [**EPIC 7 - Product Reviews:**](#epic-7---product-reviews)
+        * [**EPIC 8 - Marketing:**](#epic-8---marketing)
+    * [**Skeleton**](#skeleton)
+      * [**Wireframes:**](#wireframes)
+        * [***Home Page:***](#home-page)
+        * [***Products Page:***](#products-page)
+        * [***Product Details Page:***](#product-details-page)
+        * [***Shopping Cart Page:***](#shopping-cart-page)
+        * [***Checkout Page:***](#checkout-page)
+        * [***User Profile Page:***](#user-profile-page)
+        * [***Order Confirmation Page:***](#order-confirmation-page)
+      * [**Database Schema**](#database-schema)
+      * [**SEO considerations**](#seo-considerations)
+        * [***Keywords***](#keywords)
+        * [***Page Titles***](#page-titles)
+        * [***Robots.txt and sitemap.xml***](#robotstxt-and-sitemapxml)
+      * [**Content**](#content)
+      * [**Surface**](#surface)
+        * [***Colour Scheme***](#colour-scheme)
+        * [***Typography***](#typography)
+    * [**Agile Development Process**](#agile-development-process)
+    * [**E-commerce Application Type**](#e-commerce-application-type)
+    * [**Marketing Strategy**](#marketing-strategy)
 
 # **Planning Phase**
 
@@ -149,3 +178,135 @@ The only user story in this Epic is related to the initial deployment; this is a
   * ...**See clearly when something goes wrong on the site** so that I can **correct any errors and continue with my purchase.**
   * ... **See a pleasantly styled and easy to navigate site** so that I can **enjoy the experience of using the site.**
   * ...**Easily contact the store owner** so that I can **ask questions about the products or the site.**
+
+##### **EPIC 3 - Sorting and Searching:**
+
+* As a **Shopper** I want to be able to...
+  * ...**Sort the list of available products** so that I can **view them in different orders, and find the highest/lowest rating/prices and sort alphabetically to aid in finding the most suitable products to suit my needs.**
+  * ...**Search for a product by name or content in the product description** so that I can **find a specific product I am looking for.**
+  * ...**View a list of products in a specific category** so that I can **view all products in that category.**
+  * ...**Identify what I have searched for easily and the number of results found** so that I can **easily see the availability of the item I searched for and quickly find the product I want.**
+
+##### **EPIC 4 - Registration and User Accounts:**
+
+* As a **Site User** I want to be able to...
+  * ...**Register for an account** so that I can **save my personal details, view my order history online.**
+  * ...**Easily login or logout at any time** so that I can **access my personal account information and protect it from unauthorized viewing on shared devices.**
+  * ...**Save my personal details to my profile from the checkout page** so that I **don’t have to enter them every time I make a purchase.**
+  * ...**Amend my personal details from my profile** so that I can **update information should there be any changes.**
+  * ...**Recover my password in case I forget/lose it** so that I can **regain access to my account in the event I lose/forget my password.**
+  * ...**Receive an email confirmation upon registration** so that I can **confirm the registration process worked correctly.**
+  
+##### **EPIC 5 - Purchasing and Checkout:**
+
+* As a **Shopper** I want to be able to...
+  * ...**Select a quantity of a product** so that I can **buy the required amount of the product.**
+  * ...**View items in my bag to be purchased** so that I can **identify the total cost of my purchases before checkout.**
+  * ...**Adjust the quantity of individual items in my bag** so that I can **easily make changes to my bag.**
+  * ...**Easily enter my payment information** so that I can **checkout quickly with no hassles by using information previously stored in the system.**
+  * ...**View an order confirmation after checkout** so that I can **verify that I haven’t made any mistakes.**
+  * ...**Receive an email confirmation after checking out** so that I can **keep a record of my order.**
+  * ...**View my order history** so that I can **see the orders I have made previously.**
+  * ...**Access the checkout page** so that I can **review my order whilst entering my payment/shipping details**
+  * ...**securely submit my payment details** so that I can **rest assured my financial information is safe**
+
+##### **EPIC 6 - Admin and Store Management:**
+
+* As a **Store Owner** I want to be able to...
+  * ...**Add a product** so that I can **add new products to the store.**
+  * ...**Edit/update a product** so that I can **change product details.**
+  * ...**Delete a product** so that I can **remove products that are no longer for sale.**
+  * ...**Add a promotion** so that I can **add new promotions to the store.**
+  * ...**manually manage the stock levels** so that I can **input received purchase orders and ensure that the stock levels are accurate in case of discrepancies or damages.**
+
+##### **EPIC 7 - Product Reviews:**
+
+* As a **Shopper** I want to be able to...
+  * ...**Leave a review** so that I can **share my opinion of a product and leave a rating.**
+  * ...**View reviews of a product** so that I can **see what other people think of a product.**
+  * ...**Edit my reviews of a product** so that I can **update my public opinion should it ever change**
+  * ...**delete my reviews of a product** so that I can **remove previous reviews should I see fit**.
+
+
+##### **EPIC 8 - Marketing:**
+
+* As a **business owner** I want to be able to...
+  * ...**Send promotional emails** so that I can **promote new products and offers to my customers.**
+  * ...**Set up a social media page** so that I can **promote my business and products to the global market.**
+  * ...**Increase my search engine ranking** so that I can **increase the number of visitors to my site.**
+
+### **Skeleton**
+
+#### **Wireframes:**
+
+Wireframes were created using Balsamiq wireframes to visualize how the site would look and function. Included below are the wireframes used to plan the site's layout.
+
+##### ***Home Page:***
+
+[Home page wireframe](home-page-pic)
+
+##### ***Products Page:***
+
+[Products page wireframe](product-page-pic)
+
+##### ***Product Details Page:***
+
+[Product details page wireframe](product-details-page-pic)
+
+##### ***Checkout Page:***
+
+[Checkout page wireframe](checkout-page-pic)
+
+##### ***User Profile Page:***
+
+[User profile page wireframe](user-page-pic)
+
+### **SEO considerations**
+
+#### ***Keywords***
+
+During the creation of my website I added as many different phrases and keywords to my meta tags to assist in the SEO of the site. This was so my website would be easily searchable and that when users were looking for the products that my website provides they would be taken to my website.
+
+#### ***Page Titles***
+
+Each page shows an extra title after the store name to assist help with SEO.
+
+#### ***Robots.txt and sitemap.xml***
+
+Sitemap and robots.txt files have been added to the site's root to help with SEO.
+
+### ***Content***
+
+The site did not have too many opportunities for content in terms of paragraphs and text. A lot of the keywords are products themselves, so i have tried to use the heading tages and other semantic tags correctly so that the quality of my site's search rating is as high as possible.
+
+### **Surface**
+
+Once the project was planned I then had to decide on a theme. I wanted to keep it simple but have some colour to help it stand out. I also wanted to keep it clean and easy to navigate. I have used a lot of white space and a simple colour scheme to help with this.
+
+#### **Colour Scheme**
+
+Black and white feature heavily throughout the site. However, I added colour to help the content pop and to help with the branding. After researching various options for this project, I opted for the colour scheme below:
+
+![Colour Palette](colour-palette-pic)
+
+#### ***Typography***
+
+I done some research on fonts to decide which one I wanted to use for this project, in the end I decided on:
+
+* [Oswald](https://fonts.google.com/specimen/Oswald) - This font is used throughout the entire websites due to its clean and easy to read look, it also stands out well.
+
+## **Agile Development Process**
+
+## **E-commerce Application Type**
+
+As already mentioned, RYNE is a B2C e-commerce application. Selling directly to consumers means that the site is designed to sell quickly, on impulse and in smaller quantities. Due to this being a B2C website only, a large amount of the functionality is focused on the user experience and the ability to purchase products quickly and effectively.
+
+## **Marketing Strategy**
+
+As RYNE is a start-up business, the budget for marketing is limited compared to other businesses. However, there are several ways that RYNE can market itself to help increase sales and brand awareness. Using Facebook to get out content and drive traffic is the first and most straightforward. The use of paid ads allows the business to target specific demographics and increase brand awareness. The use of social media is also a great way to get feedback from customers and to help with customer service. There is an image of the Facebook page in the features section below and a link to the page [here](facebook-link).
+
+The second is the use of google ads which are a great way to increase brand awareness and help with SEO. The use of google ads can also help with the use of long-tail keywords and help with the ranking of the site.
+
+The third is the use of influencers. Influencers are a great way to increase brand awareness. Free samples could be sent to popular athletes, bodybuilders, strongmen etc. on youtube in exchange for a mention/hashtag/link in the description. Further helps raise brand awareness because the video could be posted on Facebook and the influencer tagged in the post, which with the help of the algorithm used at Facebook, would help bring an organic audience to the Facebook page and, hopefully, the store.
+
+
