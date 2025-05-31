@@ -11,6 +11,10 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+import os
+import dj_database_url
+if os.path.isfile('env.py'):
+    import env
 
 import os
 
@@ -22,12 +26,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-h!e=-@rz+@85p@(ee5o*i@q0hbgh-6#=40iv8$#p4m1s1-*fkv'
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ryne-1e6e27341dc4.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -103,10 +107,7 @@ WSGI_APPLICATION = 'ryne.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 

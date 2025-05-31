@@ -170,68 +170,65 @@ The only user story in this Epic is related to the initial deployment; this is a
 * As a **Shopper** I want to be able to...
   * ...**Clearly identity the sites purpose upon visiting** so that I can **determine if the site is what I am looking for.**
   * ...**View a list of products** so that I can **select some to purchase.**
-  * ...**View individual product details** so that I can **identify the price, description, detailed reviews, and product image enabling me to compare how the product differs from other items.**
-  * ...**View the total of my purchases at any time** so that I can **see and review how much I am spending at any time whilst building an order.**
+  * ...**View individual product details** so that I can **identify the price, description, product rating, product image and available sizes.**
+  * ...**Easily view the total of my purchases at any time** so that I can **see and review how much I am spending at any time whilst building an order.**
   * ...**Leave a review** so that I can **share my opinion of a product and leave a star rating.**
   * ...**View reviews of a product** so that I can **see what other people think of a product.**
-  * ...**Identify any promotions that are available** so that I can **take advantage of them and obtain the best value for money possible.**
-  * ...**See clearly when something goes wrong on the site** so that I can **correct any errors and continue with my purchase.**
-  * ... **See a pleasantly styled and easy to navigate site** so that I can **enjoy the experience of using the site.**
+  * ...**Quickly identify deals, clearance items and special offers** so that I can **take advantage of special savings on products I'd like to purchase.**
+  * ...**See a pleasantly styled and easy to navigate site** so that I can **enjoy the experience of using the site.**
   * ...**Easily contact the store owner** so that I can **ask questions about the products or the site.**
 
 ##### **EPIC 3 - Sorting and Searching:**
 
 * As a **Shopper** I want to be able to...
-  * ...**Sort the list of available products** so that I can **view them in different orders, and find the highest/lowest rating/prices and sort alphabetically to aid in finding the most suitable products to suit my needs.**
-  * ...**Search for a product by name or content in the product description** so that I can **find a specific product I am looking for.**
-  * ...**View a list of products in a specific category** so that I can **view all products in that category.**
-  * ...**Identify what I have searched for easily and the number of results found** so that I can **easily see the availability of the item I searched for and quickly find the product I want.**
+  * ...**Sort the list of available products** so that I can **easily identify the best rated, best priced and categorically sorted products.**
+  * ...**Search for a product by name or description** so that I can **find a specific product I'd like to purchase.**
+  * ...**Sort a specific category of product** so that I can **find the best-priced or best-rated product in a specific category, or sort the products in that category by name.**
+  * ...**Easily see what I've searched for and the number of results** so that I can **quickly decide whether the product I want is available.**
 
 ##### **EPIC 4 - Registration and User Accounts:**
 
 * As a **Site User** I want to be able to...
-  * ...**Register for an account** so that I can **save my personal details, view my order history online.**
-  * ...**Easily login or logout at any time** so that I can **access my personal account information and protect it from unauthorized viewing on shared devices.**
+  * ...**Easily register for an account** so that I can **save my personal details and view my order history online.**
+  * ...**Easily login or logout** so that I can **access my personal account information and protect it from unauthorized viewing on shared devices.**
   * ...**Save my personal details to my profile from the checkout page** so that I **don’t have to enter them every time I make a purchase.**
-  * ...**Amend my personal details from my profile** so that I can **update information should there be any changes.**
-  * ...**Recover my password in case I forget/lose it** so that I can **regain access to my account in the event I lose/forget my password.**
-  * ...**Receive an email confirmation upon registration** so that I can **confirm the registration process worked correctly.**
+  * ...**Have a personalized user profile** so that I can **view my personal order history and order confirmations, save my payment information and update information.**
+  * ...**Easily recover my password in case I forget it** so that I can **recover access to my account.**
+  * ...**Receive an email confirmation after registering** so that I can **verify that my account registration was successful.**
   
 ##### **EPIC 5 - Purchasing and Checkout:**
 
 * As a **Shopper** I want to be able to...
   * ...**Select a quantity of a product** so that I can **buy the required amount of the product.**
-  * ...**View items in my bag to be purchased** so that I can **identify the total cost of my purchases before checkout.**
-  * ...**Adjust the quantity of individual items in my bag** so that I can **easily make changes to my bag.**
-  * ...**Easily enter my payment information** so that I can **checkout quickly with no hassles by using information previously stored in the system.**
-  * ...**View an order confirmation after checkout** so that I can **verify that I haven’t made any mistakes.**
-  * ...**Receive an email confirmation after checking out** so that I can **keep a record of my order.**
+  * ...**View items in my bag to be purchased** so that I can **identify the total cost of my purchase and all items I will recieve.**
+  * ...**Adjust the quantity of individual items in my bag** so that I can **easily make changes to my purchase before checkout.**
+  * ...**Easily enter my payment information** so that I can **check out quickly and with no hassles.**
+  * ...**View an order confirmation after checkout** so that I can **verify that I haven't made any mistakes.**
+  * ...**Receive an email confirmation after checking out** so that I can **keep the confirmation of what I've purchased for my records.**
   * ...**View my order history** so that I can **see the orders I have made previously.**
-  * ...**Access the checkout page** so that I can **review my order whilst entering my payment/shipping details**
-  * ...**securely submit my payment details** so that I can **rest assured my financial information is safe**
+  * ...**Access the checkout page** so that I can **review my order whilst entering my payment/shipping details.**
+  * ...**Feel my personal and payment information is safe and secure** so that I can **confidently provide the needed information to make a purchase.**
 
 ##### **EPIC 6 - Admin and Store Management:**
 
 * As a **Store Owner** I want to be able to...
-  * ...**Add a product** so that I can **add new products to the store.**
-  * ...**Edit/update a product** so that I can **change product details.**
-  * ...**Delete a product** so that I can **remove products that are no longer for sale.**
-  * ...**Add a promotion** so that I can **add new promotions to the store.**
-  * ...**manually manage the stock levels** so that I can **input received purchase orders and ensure that the stock levels are accurate in case of discrepancies or damages.**
+  * ...**Add a product** so that I can **add new items to my store.**
+  * ...**Edit/update a product** so that I can **change product prices, descriptions, images, and other product criteria.**
+  * ...**Delete a product** so that I can **remove items that are no longer for sale.**
+  * ...**Manually manage the stock levels** so that I can **input received purchase orders and ensure that the stock levels are accurate in case of discrepancies or damages.**
 
 ##### **EPIC 7 - Product Reviews:**
 
 * As a **Shopper** I want to be able to...
-  * ...**Leave a review** so that I can **share my opinion of a product and leave a rating.**
+  * ...**Leave a review** so that I can **share my opinion of a product and leave a star rating.**
   * ...**View reviews of a product** so that I can **see what other people think of a product.**
-  * ...**Edit my reviews of a product** so that I can **update my public opinion should it ever change**
-  * ...**delete my reviews of a product** so that I can **remove previous reviews should I see fit**.
+  * ...**Edit my reviews of a product** so that I can **update my public opinion should it ever change.**
+  * ...**Delete my reviews of a product** so that I can **remove previous reviews should I see fit.**.
 
 
 ##### **EPIC 8 - Marketing:**
 
 * As a **business owner** I want to be able to...
-  * ...**Send promotional emails** so that I can **promote new products and offers to my customers.**
   * ...**Set up a social media page** so that I can **promote my business and products to the global market.**
   * ...**Increase my search engine ranking** so that I can **increase the number of visitors to my site.**
 
