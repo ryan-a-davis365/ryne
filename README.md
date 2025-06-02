@@ -44,6 +44,12 @@ The deployed site can be visited here: [RYNE](link to site)
     * [**Agile Development Process**](#agile-development-process)
     * [**E-commerce Application Type**](#e-commerce-application-type)
     * [**Marketing Strategy**](#marketing-strategy)
+  * [**Features**](#features)
+    * [**Common to All Pages**](#common-to-all-pages)
+      * [**Navbar**](#navbar)
+        * [**Overall Appearance**](#overall-appearance)
+          * [***Desktop***](#desktop)
+          * [***Mobile***](#mobile)
 
 # **Planning Phase**
 
@@ -294,6 +300,8 @@ I done some research on fonts to decide which one I wanted to use for this proje
 
 ## **Agile Development Process**
 
+I used a Google Sheets table to track and create issues/user stories. You can find a summary of my agile process/learnings [here](AGILE.md).
+
 ## **E-commerce Application Type**
 
 As already mentioned, RYNE is a B2C e-commerce application. Selling directly to consumers means that the site is designed to sell quickly, on impulse and in smaller quantities. Due to this being a B2C website only, a large amount of the functionality is focused on the user experience and the ability to purchase products quickly and effectively.
@@ -306,4 +314,8 @@ The second is the use of google ads which are a great way to increase brand awar
 
 The third is the use of influencers. Influencers are a great way to increase brand awareness. Free samples could be sent to popular athletes, bodybuilders, strongmen etc. on youtube in exchange for a mention/hashtag/link in the description. Further helps raise brand awareness because the video could be posted on Facebook and the influencer tagged in the post, which with the help of the algorithm used at Facebook, would help bring an organic audience to the Facebook page and, hopefully, the store.
 
+# **Features**
 
+## **Common to All Pages**
+
+### **Navbar**
