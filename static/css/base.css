@@ -40,7 +40,7 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important;
     border: 1px solid black;
 }
 .btn-outline-black:hover,
@@ -163,6 +163,25 @@ a.category-badge > span.badge:hover {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+.card-img-top {
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: #fff;
+}
+
+.product-detail-img {
+    height: 500px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
