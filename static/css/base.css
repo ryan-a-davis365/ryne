@@ -173,7 +173,7 @@ a.category-badge > span.badge:hover {
     background: #fff;
 }
 
-.product-detail-img {
+.product-detail-img, .bag-img {
     height: 500px;
     width: 100%;
     object-fit: contain;
@@ -182,6 +182,10 @@ a.category-badge > span.badge:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#payment-form .form-group {
+    margin-bottom: 0.5rem;
 }
 
 
