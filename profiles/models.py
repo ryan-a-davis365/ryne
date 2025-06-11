@@ -25,10 +25,11 @@ class UserProfile(models.Model):
     
 
 @receiver(post_save, sender=User)
-def create_or_update_user_profile(send, instance, created, **kwargs):
+def create_or_update_user_profile(sender, instance, created, **kwargs):
     """
     Create or update the user profile
     """
     if created:
         UserProfile.objects.create(user=instance)
-    instance.userprofile.save()
+    else:
+        instance.userprofile.save()
