@@ -16,8 +16,6 @@ import dj_database_url
 if os.path.isfile('env.py'):
     import env
 
-import os
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -185,6 +183,7 @@ DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 
 STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
 MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
