@@ -27,7 +27,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
+
 ALLOWED_HOSTS = ['ryne-1e6e27341dc4.herokuapp.com', '127.0.0.1', 'localhost']
 
 
@@ -171,7 +172,7 @@ AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
 AWS_S3_REGION_NAME = 'eu-north-1'
 AWS_S3_CUSTOM_DOMAIN = 'projectryne.s3.amazonaws.com'
 
-MEDIAFILES_LOCATION = 'media/products/'
+MEDIAFILES_LOCATION = 'media/'
 
 STORAGES = {
     "default": {
@@ -185,7 +186,6 @@ STORAGES = {
 USE_AWS = os.environ.get('USE_AWS') == 'True'
 
 if USE_AWS:
-    # Only configure for media files
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     MEDIA_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/media/'
 else:
