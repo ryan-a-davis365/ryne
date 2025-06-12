@@ -176,7 +176,7 @@ MEDIAFILES_LOCATION = 'media/'
 
 STORAGES = {
     "default": {
-        "BACKEND": "custom_storages.MediaStorage",
+        "BACKEND": "ryne.custom_storages.MediaStorage",
     },
     "staticfiles": {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
