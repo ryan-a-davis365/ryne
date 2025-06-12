@@ -180,7 +180,7 @@ STORAGES = {
     "default": {
         "BACKEND": "custom_storages.MediaStorage",
     },
-    "staticfiles": {"BACKEND": "custom_storages.StaticStorage"},
+#    "staticfiles": {"BACKEND": "custom_storages.StaticStorage"},
     }
 
 
