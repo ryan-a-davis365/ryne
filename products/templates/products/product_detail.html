@@ -108,6 +108,10 @@
                                 <strong>{{ review.user.username }}</strong> - {{ review.rating }}/5<br>
                                 {{ review.comment }}<br>
                                 <small>{{ review.created_at }}</small>
+                                {% if user.is_authenticated and review.user == user %}
+                                    | <a href="{% url 'edit_review' review.id %}">Edit</a>
+                                    | <a href="{% url 'delete_review' review.id %}">Delete</a>
+                                {% endif %}
                             </div>
                         {% empty %}
                             <p>No reviews yet.</p>
