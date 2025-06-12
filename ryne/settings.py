@@ -185,7 +185,6 @@ STORAGES = {
 USE_AWS = os.environ.get('USE_AWS') == 'True'
 
 if USE_AWS:
-    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     MEDIA_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/media/'
 else:
     MEDIA_URL = '/media/'
