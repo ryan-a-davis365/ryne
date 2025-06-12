@@ -171,7 +171,7 @@ AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
 AWS_S3_REGION_NAME = 'eu-north-1'
 AWS_S3_CUSTOM_DOMAIN = 'projectryne.s3.amazonaws.com'
 
-MEDIAFILES_LOCATION = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/media/'
+MEDIAFILES_LOCATION = 'media/products/'
 
 STORAGES = {
     "default": {
