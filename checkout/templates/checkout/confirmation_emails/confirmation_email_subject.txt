@@ -1,1 +1,1 @@
-RYNE Confirmation for Order Number {{ order.order_number }}
+Confirm your email for RYNE

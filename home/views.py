@@ -41,7 +41,7 @@ def newsletter_signup(request):
         send_mail(
             subject='Welcome to the RYNE Newsletter!',
             message=f'Hi {username},\n\nThank you for signing up for the RYNE newsletter. Stay tuned for updates and exclusive offers!',
-            from_email=None,  # Uses DEFAULT_FROM_EMAIL
+            from_email=None,
             recipient_list=[email],
             fail_silently=False,
         )
