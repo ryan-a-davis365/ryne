@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q
+from django.db.models import Q, Subquery, OuterRef
 from django.db.models.functions import Lower
 
 from .models import Product, Category, Review
@@ -24,7 +24,14 @@ def all_products(request):
             sortkey = 'lower_name'
             products = products.annotate(lower_name=Lower('name'))
         if sortkey == 'category':
-            sortkey = 'category__name'
+            first_clothing_category = Category.objects.filter(
+                product=OuterRef('pk'),
+                group='clothing'
+            ).order_by('name').values('name')[:1]
+            products = products.annotate(
+                first_clothing_category=Subquery(first_clothing_category)
+            )
+            sortkey = 'first_clothing_category'
         if direction == 'desc':
             sortkey = f'-{sortkey}'
         products = products.order_by(sortkey)

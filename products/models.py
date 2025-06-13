@@ -7,8 +7,9 @@ class Category(models.Model):
     class Meta:
         verbose_name_plural = 'Categories'
         
-    name = models.CharField(max_length=254)
+    name = models.CharField(max_length=254, unique=True)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
+    group = models.CharField(max_length=50, choices=[('clothing', 'Clothing'), ('special', 'Special Offers')], default='clothing')
 
     def __str__(self):
         return self.name
@@ -17,7 +18,7 @@ class Category(models.Model):
         return self.friendly_name
     
 class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ManyToManyField('Category', blank=True)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()

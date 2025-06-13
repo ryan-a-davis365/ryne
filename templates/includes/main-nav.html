@@ -5,9 +5,9 @@
                 All Products
             </a>
             <ul class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <li><a href="" class="dropdown-item">By Price</a></li>
-                <li><a href="" class="dropdown-item">By Rating</a></li>
-                <li><a href="" class="dropdown-item">By Category</a></li>
+                <li><a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a></li>
+                <li><a href="{% url 'products' %}?sort=rating&direction=asc" class="dropdown-item">By Rating</a></li>
+                <li><a href="{% url 'products' %}?sort=category&direction=desc" class="dropdown-item">By Category</a></li>
                 <li><a href="{% url 'products' %}" class="dropdown-item">All Products</a></li>
             </ul>
         </li>
@@ -31,10 +31,9 @@
                 Special Offers
             </a>
             <ul class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <li><a href="" class="dropdown-item">New Arrivals</a></li>
-                <li><a href="" class="dropdown-item">Deals</a></li>
-                <li><a href="" class="dropdown-item">Clearance</a></li>
-                <li><a href="" class="dropdown-item">All Specials</a></li>
+                <li><a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a></li>
+                <li><a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a></li>
+                <li><a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a></li>
             </ul>
         </li>
     </ul>
