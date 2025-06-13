@@ -267,6 +267,10 @@ a.category-badge > span.badge:hover {
     font-weight: bold;
 }
 
+.stripe-style-input {
+    padding: 5px 12px !important;
+}
+
 /* Product Form */
 
 .btn-file {
