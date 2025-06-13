@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h2 class="logo-font mb-4 review-title text-black">Stay in the Loop</h2>
+                <p>Sign up for our newsletter to get exclusive offers, new drop alerts, and fitness tips straight to your inbox. No spam — just pure motivation.</p>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="id_username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="id_username" name="username"
+                            value="{% if request.user.is_authenticated %}{{ request.user.username }}{% endif %}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="id_email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="id_email" name="email"
+                            value="{% if request.user.is_authenticated %}{{ request.user.email }}{% endif %}">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="id_agree" name="agree" required>
+                        <label class="form-check-label" for="id_agree">
+                            I agree to receive e-mails from RYNE
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-black">Submit</button>
+                </form>
+            </div>
+        </div>
+{% endblock %}

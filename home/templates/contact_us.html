@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h2 class="logo-font mb-4 review-title text-black">Contact Us</h2>
+                <p>Got questions about our gear, your order, or sizing? Reach out using the form below — our team is here to help you stay fit and look great doing it.</p>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="id_username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="id_username" name="username"
+                            value="{% if request.user.is_authenticated %}{{ request.user.username }}{% endif %}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="id_email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="id_email" name="email"
+                            value="{% if request.user.is_authenticated %}{{ request.user.email }}{% endif %}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="id_message" class="form-label">Message</label>
+                        <textarea class="form-control" id="id_message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-black">Submit</button>
+                </form>
+            </div>            
+        </div>
+{% endblock %}
