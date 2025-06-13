@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import ContactSubmission, NewsletterSignup
+from django.core.mail import send_mail
 
 
 def index(request):
@@ -36,6 +37,13 @@ def newsletter_signup(request):
             username=username,
             email=email,
             agreed=agreed
+        )
+        send_mail(
+            subject='Welcome to the RYNE Newsletter!',
+            message=f'Hi {username},\n\nThank you for signing up for the RYNE newsletter. Stay tuned for updates and exclusive offers!',
+            from_email=None,  # Uses DEFAULT_FROM_EMAIL
+            recipient_list=[email],
+            fail_silently=False,
         )
         return redirect('newsletter_confirmation')
     return render(request, 'newsletter_signup.html')
