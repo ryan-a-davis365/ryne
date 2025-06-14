@@ -39,7 +39,7 @@
                                 <tr>
                                     <td class="p-3 w-25">
                                         {% if item.product.image %}
-                                        <img class="img-fluid rounded bag-pic" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                                        <img class="img-fluid rounded bag-pic bag-item-img" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                                         {% else %}
                                         <img class="img-fluid rounded" src="https://projectryne.s3.eu-north-1.amazonaws.com/products/noimage.png" alt="{{ item.product.name }}">
                                         {% endif %}
@@ -56,15 +56,13 @@
                                         <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                             {% csrf_token %}
                                             <div class="form-group">
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
+                                                <div class="input-group qty-center-group">
                                                         <button class="decrement-qty btn btn-sm btn-black rounded-0" 
                                                             data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
                                                             <span>
                                                                 <i class="fas fa-minus fa-sm"></i>
                                                             </span>
                                                         </button>
-                                                    </div>
                                                     <input class="form-control form-control-sm qty_input" type="number"
                                                         name="quantity" value="{{ item.quantity }}" min="1" max="99"
                                                         data-item_id="{{ item.item_id }}"

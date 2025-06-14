@@ -196,14 +196,13 @@ a.category-badge > span.badge:hover {
     margin-top: 80px;
 }
 
-
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+.qty-input-group {
+    flex-wrap: nowrap !important;
+}
+.qty-input-group .form-control,
+.qty-input-group .btn {
+    min-width: 40px;
+    text-align: center;
 }
 
 /* Allauth form formatting */
@@ -303,6 +302,52 @@ a.category-badge > span.badge:hover {
     border-radius: 0;
 }
 
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+
+@media (max-width: 576px) {
+    .custom-product-img {
+        display: block;
+        margin: 0 auto;
+        max-width: 350px;
+        width: 100%;
+        height: auto;
+    }
+    .image-container {
+        margin-top: 1rem !important;
+        padding-top: 0 !important;
+    }
+    .bag-item-img {
+        width: 60px !important;
+        height: 60px !important;
+        object-fit: cover;
+    }
+    .qty-center-group {
+    display: flex;
+    align-items: center;
+    max-width: 80px;
+    flex-wrap: nowrap;
+    }
+    .qty-center-group .btn,
+    .qty-center-group .form-control.qty_input {
+        height: 24px;
+        min-width: 20px;
+        max-width: 24px;
+        padding: 0;
+        font-size: 0.65rem;
+        line-height: 1;
+        text-align: center;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .qty-center-group .form-control.qty_input {
+        margin: 0 2px;
+    }
+}
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -327,4 +372,46 @@ a.category-badge > span.badge:hover {
     body {
         height: calc(100vh - 116px);
     }
+
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
 }
