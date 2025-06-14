@@ -14,11 +14,21 @@ def contact_us(request):
         email = request.POST.get('email')
         message = request.POST.get('message')
         user = request.user if request.user.is_authenticated else None
+
         ContactSubmission.objects.create(
             user=user,
             username=username,
             email=email,
             message=message
+        )
+
+        body = f"Username: {username}\nEmail: {email}\n\nMessage:\n{message}"
+        send_mail(
+            subject='New Contact Form Submission',
+            message=body,
+            from_email=None,
+            recipient_list=['projectryne@gmail.com'],
+            fail_silently=False,
         )
         return redirect('contact_confirmation')
     return render(request, 'contact_us.html')
