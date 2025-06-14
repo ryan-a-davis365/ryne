@@ -192,6 +192,10 @@ a.category-badge > span.badge:hover {
     margin-right: auto;
 }
 
+.not-found {
+    margin-top: 80px;
+}
+
 
 /* -------------------------------- Media Queries */
 
