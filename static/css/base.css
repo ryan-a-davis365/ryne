@@ -205,6 +205,39 @@ a.category-badge > span.badge:hover {
     text-align: center;
 }
 
+.mobile-navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    background: #fff;
+}
+.mobile-logo {
+    margin-right: 16px;
+    flex-shrink: 0;
+}
+.mobile-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 18px;
+    width: 100%;
+}
+.mobile-icons .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+    min-width: 60px;
+}
+.mobile-navbar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.list-inline-item {
+    margin-right: 0;
+}
+
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {

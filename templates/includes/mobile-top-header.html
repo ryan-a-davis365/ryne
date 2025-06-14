@@ -1,3 +1,8 @@
+<li class="list-inline-item d-block d-lg-none">
+    <a href="{% url 'home' %}" class="nav-link p-0">
+        <h2 class="logo-font text-black my-0"><strong>RYNE</strong></h2>
+    </a>
+</li>
 <li class="list-inline-item">
     <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
@@ -10,7 +15,7 @@
             <div class="input-group w-100">
                 <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
                 <div class="input-group-append">
-                    <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
+                    <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                         <span class="icon">
                             <i class="fas fa-search"></i>
                         </span>
@@ -18,6 +23,18 @@
                 </div>
             </div>
         </form>
+    </div>
+</li>
+<li class="list-inline-item dropdown">
+    <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-contact" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="text-center">
+            <div><i class="fas fa-envelope fa-lg"></i></div>
+            <p class="my-0">Contact</p>
+        </div>
+    </a>
+    <div class="dropdown-menu border-0" aria-labelledby="mobile-contact">
+        <a href="{% url 'newsletter_signup' %}" class="dropdown-item">Newsletter Signup</a>
+        <a href="{% url 'contact_us' %}" class="dropdown-item">Contact Us</a>
     </div>
 </li>
 <li class="list-inline-item dropdown">
@@ -32,7 +49,7 @@
             {% if request.user.is_superuser %}
                 <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
             {% endif %}
-            <a href="" class="dropdown-item">My Profile</a>
+            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
         {% else %}
             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
@@ -45,7 +62,7 @@
         <div class="text-center">
             <div><i class="fas fa-shopping-bag fa-lg"></i></div>
             <p class="my-0">
-                {% if grand_total %}
+                {% if bag_items %}
                     ${{ grand_total|floatformat:2 }}
                 {% else %}
                     $0.00
