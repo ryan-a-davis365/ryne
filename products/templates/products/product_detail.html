@@ -15,15 +15,15 @@
     <div class="row">
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="image-container my-5">
-                {% if product.image_url %}
-                <a href="{{ product.image_url }}" target="_blank">
+            {% if product.image %}
+                <a href="{{ product.image.url }}" target="_blank">
                     <img class="product-detail-img img-fluid custom-product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
-                {% else %}
-                <a href="">
+            {% else %}
+                <a href="#">
                     <img class="card-img-top img-fluid custom-product-img" src="https://projectryne.s3.eu-north-1.amazonaws.com/media/products/noimage.png" alt="{{ product.name }}">
                 </a>
-                {% endif %}
+            {% endif %}
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
