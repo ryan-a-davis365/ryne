@@ -9,7 +9,7 @@
             "price": 29.99,
             "category": 5,
             "rating": 4.6,
-            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/products/male-black-joggers.jpg",
+            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/media/products/male-black-joggers.jpg",
             "image": "products/male-black-joggers.jpg"
         }
     },
@@ -23,7 +23,7 @@
             "price": 24.99,
             "category": 8,
             "rating": 4.6,
-            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/products/male-black-shorts.jpg",
+            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/media/products/male-black-tight-shorts.jpg",
             "image": "products/male-black-shorts.jpg"
         }
     },
@@ -37,7 +37,7 @@
             "price": 24.99,
             "category": 1,
             "rating": 4.7,
-            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/products/male-black-tightfit-gym-top.jpg",
+            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/media/products/male-black-tightfit-gym-top.jpg",
             "image": "products/male-black-tightfit-gym-top.jpg"
         }
     },
@@ -51,7 +51,7 @@
             "price": 19.99,
             "category": 7,
             "rating": 3,
-            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/products/male-blue-vest-top.jpg",
+            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/media/products/male-blue-vest-top.jpg",
             "image": "products/male-blue-vest-top.jpg"
         }
     },
@@ -65,7 +65,7 @@
             "price": 24.99,
             "category": 4,
             "rating": 5,
-            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/products/male-burgundy-sleeveless-hoodie.jpg",
+            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/media/products/male-burgundy-sleeveless-hoodie.jpg",
             "image": "products/male-burgundy-sleeveless-hoodie.jpg"
         }
     },
@@ -79,7 +79,7 @@
             "price": 14.99,
             "category": 7,
             "rating": 4.7,
-            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/products/male-darkblue-vest-top.jpg",
+            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/media/products/male-darkblue-vest-top.jpg",
             "image": "products/male-darkblue-vest-top.jpg"
         }
     },
@@ -93,7 +93,7 @@
             "price": 19.99,
             "category": 1,
             "rating": 4.4,
-            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/products/male-darkgrey-short-sleeve-gym-top.jpg",
+            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/media/products/male-darkgrey-short-sleeve-gym-top.jpg",
             "image": "products/male-darkgrey-short-sleeve-gym-top.jpg"
         }
     },
@@ -107,7 +107,7 @@
             "price": 24.99,
             "category": 5,
             "rating": 4.5,
-            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/products/male-grey-joggers.jpg",
+            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/media/products/male-grey-joggers.jpg",
             "image": "products/male-grey-joggers.jpg"
         }
     },
@@ -121,7 +121,7 @@
             "price": 14.99,
             "category": 8,
             "rating": 4.7,
-            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/products/male-grey-shorts.jpg",
+            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/media/products/male-grey-shorts.jpg",
             "image": "products/male-grey-shorts.jpg"
         }
     },
@@ -135,7 +135,7 @@
             "price": 24.99,
             "category": 5,
             "rating": 4.4,
-            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/products/male-khaki-joggers.jpg",
+            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/media/products/male-khaki-joggers.jpg",
             "image": "products/male-khaki-joggers.jpg"
         }
     },
@@ -149,7 +149,7 @@
             "price": 14.99,
             "category": 8,
             "rating": 3,
-            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/products/male-khaki-shorts.jpg",
+            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/media/products/male-khaki-shorts.jpg",
             "image": "products/male-khaki-shorts.jpg"
         }
     },
@@ -163,7 +163,7 @@
             "price": 19.99,
             "category": 1,
             "rating": 4.6,
-            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/products/male-lightblue-tight-fit-long-sleeve-gym-top.jpg",
+            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/media/products/male-lightblue-tight-fit-long-sleeve-gym-top.jpg",
             "image": "products/male-lightblue-tight-fit-long-sleeve-gym-top.jpg"
         }
     },
@@ -177,7 +177,7 @@
             "price": 19.99,
             "category": 1,
             "rating": 3.2,
-            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/products/male-lightgrey-camo-gym-top.jpg",
+            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/media/products/male-lightgrey-camo-gym-top.jpg",
             "image": "products/male-lightgrey-camo-gym-top.jpg"
         }
     },
@@ -191,7 +191,7 @@
             "price": 19.99,
             "category": 1,
             "rating": 4.7,
-            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/products/male-red-tightfit-gym-top.jpg",
+            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/media/products/male-red-tightfit-gym-top.jpg",
             "image": "products/male-red-tightfit-gym-top.jpg"
         }
     },
@@ -205,7 +205,7 @@
             "price": 14.99,
             "category": 1,
             "rating": 4.8,
-            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/products/male-white-short-sleeve-gym-top.jpg",
+            "image_url": "https://projectryne.s3.eu-north-1.amazonaws.com/media/products/male-white-short-sleeve-gym-top.jpg",
             "image": "products/male-white-short-sleeve-gym-top.jpg"
         }
     }
