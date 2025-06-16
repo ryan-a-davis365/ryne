@@ -145,6 +145,9 @@ class StripeWH_Handler:
                             order_line_item.save()
             except Exception as e:
                 print(f"Webhook error: {e}")
+                import sys
+                import traceback
+                traceback.print_exc(file=sys.stdout) 
                 if order:
                     order.delete()
                 return HttpResponse(
