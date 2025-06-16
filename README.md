@@ -149,7 +149,7 @@ To avoid scope creep, I have used the MoSCoW method to divide the above opportun
 
 Using the above as a guide, I have created a flow diagram to help me visualize how the user will navigate through the site. During the agile process, minor tweaks may occur to this pre-planned user journey, but the overall structure will more or less remain the same.
 
-![Flowchart](flow-chat-screenshot)
+![Flowchart](docs/images/flow-chart.png)
 
 #### **User Stories:**
 

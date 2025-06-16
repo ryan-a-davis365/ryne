@@ -181,6 +181,10 @@ a.category-badge > span.badge:hover {
     background: #fff;
 }
 
+.card-body {
+    flex: 0 0 auto !important;
+}
+
 .product-detail-img, .bag-img {
     height: 500px;
     width: 100%;
