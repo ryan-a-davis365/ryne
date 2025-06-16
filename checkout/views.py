@@ -54,6 +54,12 @@ def checkout(request):
             pid = request.POST.get('client_secret').split('_secret')[0]
             order.stripe_pid = pid
             order.original_bag = json.dumps(bag)
+
+            bag_ctx = bag_contents(request)
+            order.order_total = bag_ctx['total']
+            order.delivery_cost = bag_ctx['delivery']
+            order.grand_total = bag_ctx['grand_total']
+
             order.save()
             for item_id, item_data in bag.items():
                 try:
