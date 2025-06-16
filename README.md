@@ -2,7 +2,7 @@
 
 RYNE is a fictional gym clothing store that was designed and implemented with Django, Python, HTML and CSS. It aims to provide an easy-to-use interface where customers can browse all items at once or sort into specified categories. The site offers search functionality. Once signed in, users can save an address to their profile for easy and convenient checkout.
 
-The deployed site can be visited here: [RYNE](link to site)
+The deployed site can be visited here: [RYNE](https://ryne-1e6e27341dc4.herokuapp.com/)
 
 ![RYNE](am-i-respnsive-screenshot)
 
@@ -30,8 +30,9 @@ The deployed site can be visited here: [RYNE](link to site)
         * [***Product Details Page:***](#product-details-page)
         * [***Shopping Cart Page:***](#shopping-cart-page)
         * [***Checkout Page:***](#checkout-page)
-        * [***User Profile Page:***](#user-profile-page)
-        * [***Order Confirmation Page:***](#order-confirmation-page)
+        * [***Profile Page:***](#profile-page)
+        * [***Newsletter Signup Page:***](#newsletter-signup-page)
+        * [***Contact Us Page:***](#contact-us-page)
       * [**Database Schema**](#database-schema)
       * [**SEO considerations**](#seo-considerations)
         * [***Keywords***](#keywords)
@@ -50,6 +51,21 @@ The deployed site can be visited here: [RYNE](link to site)
         * [**Overall Appearance**](#overall-appearance)
           * [***Desktop***](#desktop)
           * [***Mobile***](#mobile)
+        * [**Common Navbar Features for both Desktop and Mobile**](#common-navbar-features-for-both-desktop-and-mobile)
+          * [***Logo***](#logo)
+            * [***Desktop***](#desktop-1)
+            * [***Mobile***](#mobile-1)
+          * [***Search Bar***](#search-bar)
+            * [***Desktop***](#desktop-2)
+            * [***Mobile***](#mobile-2)
+        * [**Account menu**](#account-menu)
+          * [***Unauthenticated***](#unauthenticated)
+          * [***Authenticated***](#authenticated)
+        * [**Cart icon**](#cart-icon)
+        * [**Common Features to both Desktop and Mobile**](#common-features-to-both-desktop-and-mobile)
+          * [***Social Media Links***](#social-media-links)
+          * [***Newsletter Sign Up***](#newsletter-sign-up)
+      * [**Notifications**](#notifications)
 
 # **Planning Phase**
 
@@ -149,7 +165,7 @@ To avoid scope creep, I have used the MoSCoW method to divide the above opportun
 
 Using the above as a guide, I have created a flow diagram to help me visualize how the user will navigate through the site. During the agile process, minor tweaks may occur to this pre-planned user journey, but the overall structure will more or less remain the same.
 
-![Flowchart](docs/images/flow-chart.png)
+![Flowchart](docs/images/flowcharts/flow-chart.png)
 
 #### **User Stories:**
 
@@ -237,6 +253,7 @@ The only user story in this Epic is related to the initial deployment; this is a
 * As a **business owner** I want to be able to...
   * ...**Set up a social media page** so that I can **promote my business and products to the global market.**
   * ...**Increase my search engine ranking** so that I can **increase the number of visitors to my site.**
+  * ...**Setup a newsletter signup** so that I can **inform the customers with news on products**
 
 ### **Skeleton**
 
@@ -246,23 +263,83 @@ Wireframes were created using Balsamiq wireframes to visualize how the site woul
 
 ##### ***Home Page:***
 
-[Home page wireframe](home-page-pic)
+Desktop:
+
+![Home page wireframe desktop](docs/images/wireframes/home-page-desktop.png)
+
+Mobile:
+
+![Home page wireframe mobile](docs/images/wireframes/home-page-mobile.png)
 
 ##### ***Products Page:***
 
-[Products page wireframe](product-page-pic)
+Desktop:
+
+![Products page wireframe desktop](docs/images/wireframes/products-page-desktop.png)
+
+Mobile:
+
+![Products page wireframe mobile](docs/images/wireframes/products-page-mobile.png)
 
 ##### ***Product Details Page:***
 
-[Product details page wireframe](product-details-page-pic)
+Desktop:
+
+![Product details page wireframe desktop](docs/images/wireframes/product-details-page-desktop.png)
+
+Mobile:
+
+![Product details page wireframe mobile](docs/images/wireframes/product-details-page-mobile.png)
+
+##### ***Shopping Cart Page:***
+
+Desktop:
+
+![Shopping cart page wireframe desktop](docs/images/wireframes/shopping-cart-page-desktop.png)
+
+Mobile:
+
+![Shopping cart page wireframe mobile](docs/images/wireframes/shopping-cart-page-mobile.png)
 
 ##### ***Checkout Page:***
 
-[Checkout page wireframe](checkout-page-pic)
+Desktop:
 
-##### ***User Profile Page:***
+![Checkout page wireframe desktop](docs/images/wireframes/checkout-page-desktop.png)
 
-[User profile page wireframe](user-page-pic)
+Mobile:
+
+![Checkout page wireframe mobile](docs/images/wireframes/checkout-page-mobile.png)
+
+##### ***Profile Page:***
+
+Desktop:
+
+![User profile page wireframe desktop](docs/images/wireframes/profile-page-desktop.png)
+
+Mobile:
+
+![User profile page wireframe mobile](docs/images/wireframes/profile-page-mobile.png)
+
+##### ***Newsletter Signup Page:***
+
+Desktop:
+
+![Newsletter Signup Page wireframe desktop](docs/images/wireframes/newsletter-signup-page-desktop.png)
+
+Mobile:
+
+![Newsletter Signup Page wireframe mobile](docs/images/wireframes/newsletter-signup-page-mobile.png)
+
+##### ***Contact Us Page:***
+
+Desktop:
+
+![Contact Us Page wireframe desktop](docs/images/wireframes/contact-us-page-desktop.png)
+
+Mobile:
+
+![Contact Us Page wireframe mobile](docs/images/wireframes/contact-us-page-mobile.png)
 
 ### **SEO considerations**
 
@@ -288,9 +365,7 @@ Once the project was planned I then had to decide on a theme. I wanted to keep i
 
 #### **Colour Scheme**
 
-Black and white feature heavily throughout the site. However, I added colour to help the content pop and to help with the branding. After researching various options for this project, I opted for the colour scheme below:
-
-![Colour Palette](colour-palette-pic)
+The main colours used in this site were Black and White, this was purely for the simplicity of the site. I believe that the simple colour scheme adds to how easy the site is overall to navigate without any complication.
 
 #### ***Typography***
 
@@ -308,7 +383,7 @@ As already mentioned, RYNE is a B2C e-commerce application. Selling directly to 
 
 ## **Marketing Strategy**
 
-As RYNE is a start-up business, the budget for marketing is limited compared to other businesses. However, there are several ways that RYNE can market itself to help increase sales and brand awareness. Using Facebook to get out content and drive traffic is the first and most straightforward. The use of paid ads allows the business to target specific demographics and increase brand awareness. The use of social media is also a great way to get feedback from customers and to help with customer service. There is an image of the Facebook page in the features section below and a link to the page [here](facebook-link).
+As RYNE is a start-up business, the budget for marketing is limited compared to other businesses. However, there are several ways that RYNE can market itself to help increase sales and brand awareness. Using Facebook to get out content and drive traffic is the first and most straightforward. The use of paid ads allows the business to target specific demographics and increase brand awareness. The use of social media is also a great way to get feedback from customers and to help with customer service. There is an image of the Facebook page in the features section below and a link to the page [here](https://www.facebook.com/profile.php?id=61577294705720).
 
 The second is the use of google ads which are a great way to increase brand awareness and help with SEO. The use of google ads can also help with the use of long-tail keywords and help with the ranking of the site.
 
@@ -319,3 +394,184 @@ The third is the use of influencers. Influencers are a great way to increase bra
 ## **Common to All Pages**
 
 ### **Navbar**
+
+The navigation bar is the core navigation for the site. It differs slightly from mobile to desktop; however, both include all the same components.
+
+#### **Overall Appearance**
+
+##### ***Desktop***
+
+![Desktop Navbar](docs/images/features/navbar-desktop.png)
+
+##### ***Mobile***
+
+![Desktop Mobile](docs/images/features/navbar-mobile.png)
+
+#### **Common Navbar Features for both Desktop and Mobile**#
+
+##### ***Logo***
+
+The logo/favicon was designed to symbolize the brand. I made it myself using Photopea(https://www.photopea.com/)
+
+![Logo/Favicon](docs/images/features/ryne-favicon500.jpg)
+
+##### ***Search Bar***
+
+The search bar slightly changes according to the screen size, this was to prevent it squashing on mobile. On desktop and mobile it is in the center, but the look of it is changed due to screen size, see images below.
+
+###### ***Desktop***
+
+![Desktop Search Bar](docs/images/features/search-desktop.png)
+
+###### ***Mobile***
+
+When the "Search" buttton with the magnifying glass is selected the search box drop down appears.
+
+![Mobile Search Bar](docs/images/features/search-mobile.png)
+
+The user can enter their search term, and the products page will return with any products that match the search term. This function checks the product name and description and the user is then returned with a list of results.
+
+![Search Bar](docs/images/features/search-term.png)
+
+#### **Account menu**
+
+The "My Account" menu is a drop-down menu that appears when the user clicks on the "My Account" icon. The drop-down changes slightly depending on the authentication status of the user. The menu will show the option to register or login if the user is not logged in. If the user is logged in, the menu will show "My Profile", where the user can edit their saved delivery information and see their order history, and "Log Out" which will allow the user to log out.
+
+##### ***Unauthenticated***
+
+![Unauthenticated Account Menu](docs/images/features/unauthenticated.png)
+
+##### ***Authenticated***
+
+A normal user will not see "Product Management", this is only for super users.
+
+![Authenticated Account Menu](docs/images/features/authenticated.png)
+
+#### **Cart icon**
+
+The cart icon is visible in the navbar on all pages. The icon indicates the current total of all items in the cart.
+
+![Cart Icon](docs/images/features/cart-icon.png)
+
+A cart preview appears when the user adds an item to the cart. This cart preview relays the success message, gives a scrollable preview of the cart, the current total excluding delivery, and an informative message about how far the user is from the free delivery qualifier.
+
+![Cart Preview](docs/images/features/cart-preview.png)
+
+Clicking the cart icon any time will take the user to the shopping cart page described later.
+
+#### **Common Features to both Desktop and Mobile**
+
+The two sections typical to both desktop and mobile are:
+
+* Social Media Links
+* Newsletter Sign Up
+
+##### ***Social Media Links***
+
+I have included only one social media link for Facebook for the purposes of this project as it is the one I would like most to leverage in my marketing strategy. However, should this project ever grow further, it would also be expected to include Twitter and Instagram as a minimum.
+
+The current Facebook link will take the user directly to [Facebook](https://www.facebook.com/profile.php?id=61577294705720) where the shop will share promotions and news about the shop. More will be discussed about this in the marketing section.
+
+I have included screenshots of the Facebook page in case Facebook decides to remove it because it is not a real business at this stage.
+
+![Facebook page](docs/images/features/facebook1.png)
+
+![Facebook page](docs/images/features/facebook2.png)
+
+##### ***Newsletter Sign Up***
+
+Due to time restrictions i wasnt able to actually create a newsletter use [Mailchimp](https://mailchimp.com/). I created an account and was going to use it but it was right towards the end of my project and due to complication with the payment and the time i had before my deadline i decided to spend my time elsewhere.
+
+### **Notifications**
+
+Similar to the cart preview, the notifications are a small pop-up appearing on the screen's top right. They are used to inform the user of the status of their actions. For example, if the user adds an item to the cart, they will see a notification that says, "Item added to cart.", if the user logs in they will recieve "successfully signed in as (username)" etc. Where ever possible, when the cart preview is not required, the notifications do not include it.
+
+## **Page content**
+
+### **Home Page**
+
+The home page is the first page on which a user lands. For this reason, it has to have a clearly defined purpose and be easy to navigate.
+
+To make the site's purpose immediately apparent, I included a image that clearly showed the site is gym related. I also have a button that is immediately seen saying "Shop Now" which takes the user to the product page.
+
+![Home Page](docs/images/features/home-page.png)
+
+### **Products Page**
+
+The products page is the main page of the site. It is where the user will go to browse the products and add them to the cart. It is also where users will go when they filter the products by category. On the individual product cards, the user can see the product name, price, category, rating and image. A user accesses the product details by clicking on the product image.
+
+![Products Page](docs/images/features/products-page.png)
+
+Further to the above, when a user searches for a product and no results are returned, a message is displayed informing them that no results were found.
+
+![No Results](docs/images/features/no-products.png)
+
+### **Product Details Page**
+
+Users can access the product details page when they need more information before committing to purchase an item. This page contains all the information the user needs to make an informed decision.
+
+![Product Details Page](docs/images/features/product-details-desktop.png)
+
+The layout does change a little on a mobile view to improve the appearance.
+
+![Product Details Page Mobile](docs/images/features/product_details_mobile.png)
+
+It is also worth noting that a superuser can see an edit and delete button on the products and product details page to quickly improve certain fields and remove the product altogether should it be required. I decided to leverage the admin panel for most internal business functions; however, I will go into more detail later.
+
+![Product edit and delete for super users](docs/images/features/product-edit-del.png)
+
+### **Reviews**
+
+The reviews tab was best suited to be on the product details page, making it easy to determine for which product the review was intended. The reviews are displayed in an accordion to save space.
+
+#### ***Unauthenticated***
+
+The user can see all reviews when logged out; however, they cannot leave one. They are taken to the login page to log in or register to leave a review when they select "Leave a review".
+
+#### ***Authenticated***
+
+If the user is logged in when they select "Leave a review" they are taken to a page with a form to fill out to leave a review.
+
+![Leave a review form](docs/images/features/leave-a-review.png)
+
+The last thing to mention here is that the review author (and the superuser in case of foul language) can delete or edit the review. Editing/deletion is performed by clicking the delete/edit button in the review body, visible only to them.
+
+![Review edit and delete](docs/images/features/edit-review.png)
+
+### **Edit product - frontend form**
+
+As shown above, the product details page has an edit button for the super user to make a quick edit should they spot a typo or want to change a picture. This button takes the superuser to a form pre-populated with the current product information. The user can then make the changes they require and submit the form. The form is validated on the front and back end, and the user is informed of any errors. The user is then redirected to the product details page.
+
+![Edit product form](docs/images/features/edit-product.png)
+
+### **Shopping Cart**
+
+The shopping cart page is where the user can review the items for purchase. The user can also amend the quantity of each item, update and click the update button to update the cart. The user can also remove an item from the cart by clicking the remove button. Once the user is happy with the items in the cart, they can click the secure checkout button to proceed to the checkout page.
+
+#### ***Desktop***
+
+![Shopping Cart](docs/images/features/cart-desktop.png)
+
+#### ***Mobile***
+
+![Shopping Cart](docs/images/features/cart-mobile.png)
+
+Lastly, users will see the following message displayed if they try to access the shopping cart with no items.
+
+![Shopping Cart](docs/images/features/empty-cart.png)
+
+### **Checkout**
+
+The checkout page is where the user will enter their payment details and shipping address. If the user is logged in with details already saved to their profile from a previous order, then the form will be prefilled with this information. The user can also save their details from the checkout page. The card element is injected by the stripe API and uses a payment system that is fully PCI compliant. The same API also handles any errors using the allocated div to display them to the user. For a list of test card numbers, please see the [stripe documentation.](https://stripe.com/docs/testing). When the form has been submitted, the pay now button converts into a spinner to show it is processing. Further to the spinner, there is a transparent overlay to prevent the user from clicking anything else and creating multiple orders. The page is fully responsive, and the display order changes slightly from mobile to desktop.
+
+#### ***Desktop***
+
+![Shopping Cart](docs/images/features/checkout-desktop.png)
+
+#### ***Mobile***
+
+![Shopping Cart](docs/images/features/checkout-mobile.png)
+
+Guests can also check out, and on the checkout page, they see the following in place of the save info checkbox.
+
+![Shopping Cart](docs/images/features/guest-checkout.png)
