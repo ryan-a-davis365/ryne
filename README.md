@@ -575,3 +575,7 @@ The checkout page is where the user will enter their payment details and shippin
 Guests can also check out, and on the checkout page, they see the following in place of the save info checkbox.
 
 ![Shopping Cart](docs/images/features/guest-checkout.png)
+
+The last stage of the check out if for the user to receive an email like the sample below:
+
+![Shopping Cart](docs/images/features/confirmation_email.png)
