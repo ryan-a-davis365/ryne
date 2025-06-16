@@ -192,10 +192,6 @@ a.category-badge > span.badge:hover {
     margin-right: auto;
 }
 
-.not-found {
-    margin-top: 80px;
-}
-
 .qty-input-group {
     flex-wrap: nowrap !important;
 }
@@ -236,6 +232,10 @@ a.category-badge > span.badge:hover {
 
 .list-inline-item {
     margin-right: 0;
+}
+
+.error {
+    padding: 200px 0;
 }
 
 /* Allauth form formatting */
