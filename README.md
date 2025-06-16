@@ -4,7 +4,7 @@ RYNE is a fictional gym clothing store that was designed and implemented with Dj
 
 The deployed site can be visited here: [RYNE](https://ryne-1e6e27341dc4.herokuapp.com/)
 
-![RYNE](am-i-respnsive-screenshot)
+![RYNE](docs/images/features/am-i-responsive.png)
 
 ## **Table of Contents**
 
@@ -66,6 +66,31 @@ The deployed site can be visited here: [RYNE](https://ryne-1e6e27341dc4.herokuap
           * [***Social Media Links***](#social-media-links)
           * [***Newsletter Sign Up***](#newsletter-sign-up)
       * [**Notifications**](#notifications)
+    * [**Page content**](#page-content)
+      * [**Home Page**](#home-page-1)
+      * [**Products Page**](#products-page-1)
+      * [**Product Details Page**](#product-details-page-1)
+      * [**Reviews**](#reviews)
+        * [***Unauthenticated***](#unauthenticated-1)
+        * [***Authenticated***](#authenticated-1)
+      * [**Edit product - frontend form**](#edit-product---frontend-form)
+      * [**Shopping Cart**](#shopping-cart)
+        * [***Desktop***](#desktop-4)
+        * [***Mobile***](#mobile-4)
+      * [**Checkout**](#checkout)
+        * [***Desktop***](#desktop-5)
+        * [***Mobile***](#mobile-5)
+      * [**Checkout Success**](#checkout-success)
+      * [**Profile**](#profile)
+      * [***Contact us***](#contact-us)
+      * [**Authentication**](#authentication)
+      * [**Responsive Design**](#responsive-design)
+    * [**Admin Panel for Shop Administration**](#admin-panel-for-shop-administration)
+      * [**Admin Panel Overview**](#admin-panel-overview)
+        * [***Products***](#products)
+        * [**Messages**](#messages)
+        * [**Orders**](#orders)
+        * [**Reviews**](#reviews)
 
 # **Planning Phase**
 
@@ -579,3 +604,185 @@ Guests can also check out, and on the checkout page, they see the following in p
 The last stage of the check out if for the user to receive an email like the sample below:
 
 ![Shopping Cart](docs/images/features/confirmation_email.png)
+
+### **Checkout Success**
+
+This page confirms to the user all the details of their order. At the bottom, the user is prompted with a "Now check out the latest deals" button to view items that are in the new arrivals, deals and clearance categories. This page can only be viewed once and has logic on the back end to prevent anyone from returning to it to protect the user's details from anyone who might be able to intercept the order number or be trying random UUIDs with the URL.
+
+![Checkout Success](docs/images/features/checkout-success.png)
+
+### **Profile**
+
+The profile page has a section which is a form for the user to update their default shipping details:
+
+![Profile](docs/images/features/profile.png)
+
+And another section to view the order history:
+
+![Completed orders](docs/images/features/completed-orders.png)
+
+The order number is truncated to save space, and when the user clicks on it, they are taken to a variation of the checkout success page. The only differences to the original checkout success page is the button at the bottom, which takes the user back to the profile page.
+
+![Return to profile](docs/images/features/profile_return.png)
+
+### ***Contact us***
+
+Finally, for the front end, I have created a simple contact form for the user to get in touch. I will discuss in detail shortly how this works from the point of view of replying. However, the form allows a platform for the user to send a message to the shop. The message will then be picked up from the admin panel and responded to via email, as is a standard convention.
+
+![Contact us](docs/images/features/contact-us.png)
+
+### **Authentication**
+
+The user can log in and out using an adapted version of templates from the all-auth library.
+
+![Login](docs/images/features/login.png) ![Sign out](docs/images/features/logout.png)
+
+The user can reset their password via a form:
+
+![Reset password step 1](docs/images/features/pass-reset.png)
+
+![Reset password - email sent](docs/images/features/pass-reset-2.png)
+
+Then receive an email with a link to reset their password on the store site.
+
+![Reset email](docs/images/features/pass-reset-email.png)  
+
+![Change password form](docs/images/features/change-password.png)
+
+Once changed, they will see the following message.
+
+![Password changed](docs/images/features/pass-reset-conf.png)
+
+The user can also register for an account using the following form.
+
+![Register](docs/images/features/register.png)
+
+And will receive an email to verify their email, preventing spam accounts from being created.
+
+![Verify email](docs/images/features/verify-email.png)
+
+![Verify email](docs/images/features/email-verify.png)
+
+The link in the email brings them to this screen.
+
+![Verify email](docs/images/features/conf-email.png)
+
+And once the email is confirmed, the user is invited to log in with their new account.
+
+### **Responsive Design**
+
+It is worth stating that all pages are fully responsive; however, I have only screenshot the ones with a significant layout change in the screenshots above.
+
+## **Admin Panel for Shop Administration**
+
+I have decided that since Django has such a powerful admin panel built in, I would leverage this to help the daily running of the e-store.
+
+### **Admin Panel Overview**
+
+The admin panel is accessed via the /admin/ URL and is protected by a login.
+
+#### ***Products***
+
+The superuser can view all the products that are currently on the site, the superuser can also edit all details about the product in this page such as the categories the product is in, name, description, whether the product has different sizes or not, price, rating and image.
+
+#### **Messages**
+
+The admin panel is also where the superuser can see any messages sent via the "contact us" form, from this they can get the users email so they can use it to respond to them. In the future, I would have a ticketing system so the admin could reply here too, and make it visible to the customer on the front end.
+
+#### **Orders**
+
+The admin panel is also where the superuser can see any orders placed by customers, including all the information such as full name, email, phone number, delivery location, price, items purchased etc. They also have the option to change details of an item such as size and quantity and the option to add or remove products from the order incase of a user wanting to change anything on the order after it has already been made.
+
+#### **Reviews**
+
+The superuser can also see and edit all reviews on every product from a "Reviews" tab, if need be the superuser can edit or delete these reviews for any reason they see fit.
+
+### **Future Features**
+
+This project was a lot of fun, and although there is a viable MVP, there are many additional features I would like to add in the future.
+
+#### ***Stock System***
+
+My initial thought of implementing a stock system was to be able to input the total stock of a product through the admin panel but after further thought of how this would work I realised it would end up being a long winded process if you had to constantly add remaining stock from an old order onto stock from a new order. After some thought i realised an automatic stock system would work way better where you would input an excel file from the supplier into the admin and have the system automatically add the items to the total stock of the products.
+
+#### ***Sales reports***
+
+We all know that sales reports are necessary in this world of data-driven decision-making. I want to add a feature to the admin panel that allows the admin to generate sales reports for a given period. Accounts would enable the admin to see the store's performance and make decisions based on the data.
+
+#### ***Additional shipping choices***
+
+Such as couriers and recorded mail.
+
+#### ***Additional payment methods***
+
+Such as Paypal, Klarna etc.
+
+#### ***Additional user account features***
+
+Additional user information, such as an extra address, phone number, etc., and an avatar to be displayed when leaving reviews to build a sense of community.
+
+#### ***Product options***
+
+Such as more images per item including linked products and related products. For example, as it is now, there would need to be a product for a black t-shirt and a grey t-shirt. I want to have it so that the admin can add a product option for the colour of a t shirt and have all the other colour options underneath it. This would allow the admin to have one product for mutiple colours, and the customer could select the colour they want. Ideally, this feature would have a field that enables a product to know when another identical product exists, just with a different colour, and automatically link it to one product page with a drop-down.
+
+#### ***Ticketing Sytem***
+
+Users can have a personal inbox when contacting the store regarding their issues.
+
+## **Testing Phase**
+
+I have included testing details during and post-development in a separate document called [TESTING.md](TESTING.md).
+
+## **Deployment**
+
+The final Deployed site can be found [here](https://ryne-1e6e27341dc4.herokuapp.com/)
+I have included details of my initial deployment in a separate document called [DEPLOYMENT.md](DEPLOYMENT.md).
+
+## **Technologies used**
+
+* Python
+  * The packages installed for the project can be found in [the requirements.txt](requirements.txt)
+* Django
+  * Django was used as the python framework in the project.
+  * Django all auth was used to handle user authentication and related tasks i.e. sign in, sign up, sign out.
+* Heroku
+  * Used to deploy the page and make it publicly available.
+* Heroku PostgreSQL
+  * Used for the database during deployment.
+* SQLlite3
+	* Was used during development as a database to test models.
+* HTML
+  * HTML was the base language used to lay out the skeleton of all templates.
+* CSS
+  * Custom CSS is used to style the page and make the appearance look a little more unique.
+* Javascript
+  * I have used Javascript to manipulate the DOM and communicate with the backend to create, read, update, and delete data from the database.
+* jQuery
+  * I have used jQuery to simplify the use of Javascript.
+* Bootstrap 5.1.3
+  * Used to style HTML, CSS, minor javascript.
+* Font awesome
+  * All icons throughout the page.
+* AWS S3
+  * Used to store static and media files.
+* Stripe
+  * Used to handle payments.
+
+## **Honorable Mentions**
+
+Richard Wells (mentor) - He went above and beyond and helped me massively with any errors i came across.
+
+My family - They have motivated me and pushed me to keep going, even when i am struggling.
+
+My girlfriend - For constantly being supportive of me and giving me the time and space to complete this project.
+
+## **Credits**
+
+* [Code Institute](https://codeinstitute.net/) - For the course material and the support throughout.  Some of the project may reflect similarities to the course material, but I have tried to make it unique.
+* Balsamiq was used to create the wireframes.
+* The site was developed using VScode.
+* GitHub was used to store my repository.
+* Responsive screenshot made using [amiresponsive](https://ui.dev/amiresponsive)
+* The flowchart was created using [draw.io](https://app.diagrams.net/)
+* Fonts were taken from [Google Fonts](https://fonts.google.com/)
+* [drawsql](https://drawsql.app/) was used to create the database diagram.
