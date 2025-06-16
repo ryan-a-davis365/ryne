@@ -1,1 +1,1 @@
-web: gunicorn ryne.wsgi:application
+web: gunicorn ryne.wsgi
