@@ -4,9 +4,9 @@ Disallow: /accounts/
 Disallow: /checkout/
 Disallow: /bag/
 Disallow: /profile/
-Disallow: /products/add
-Disallow: /products/edit
-Disallow: /products/delete
+Disallow: /products/add/
+Disallow: /products/edit/
+Disallow: /products/delete/
 Allow: /
 
 Sitemap: https://ryne-1e6e27341dc4.herokuapp.com/sitemap.xml
