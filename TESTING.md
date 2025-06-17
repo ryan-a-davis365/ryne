@@ -10,6 +10,7 @@
             * [**CSS**](#css)
             * [**JavaScript**](#javascript)
             * [**Python - PEP8 - using pycodestyle**](#python---pep8---using-pycodestyle)
+        * [**Lighthouse Scores**](#lighthouse-scores)
 
 ## **Bugs and Fixes During the Development Process**
 
@@ -68,3 +69,5 @@ Checking my static JS files with jshint, there were no issues.
 ![Jshint](docs/images/validation/js-validator-2.png)
 
 #### **Python - PEP8 - using pycodestyle**
+
+I used pycodestyle to check my python code. pycodestyle is a command line installed with pip. I ran the command "pycodestyle --first <-appname->". This command checks all files in the directories and subdirectories of the app and returns the first error found. With this and cross-checking in the terminal of VScode, I found the only errors were some lines being too long(E501) and expecting 2 blank lines(E302).
