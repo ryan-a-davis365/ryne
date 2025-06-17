@@ -48,3 +48,23 @@ Below is a list of bugs and fixes found while creating a feature:
 ### **Validation**
 
 #### **[HTML](https://validator.w3.org)**
+
+No errors were found within my HTML.
+
+![HTML Validation](docs/images/validation/html-validator.png)
+
+#### **[CSS](https://jigsaw.w3.org/css-validator/)**
+
+No errors were found within my CSS.
+
+![CSS validation](docs/images/validation/css-validator.png)
+
+#### **[JavaScript](https://jshint.com/)**
+
+Checking my static JS files with jshint, there were no issues.
+
+![Jshint](docs/images/validation/js-validator-1.png)
+
+![Jshint](docs/images/validation/js-validator-2.png)
+
+#### **Python - PEP8 - using pycodestyle**
