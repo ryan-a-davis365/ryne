@@ -446,7 +446,7 @@ The navigation bar is the core navigation for the site. It differs slightly from
 
 ![Desktop Mobile](docs/images/features/navbar-mobile.png)
 
-#### **Common Navbar Features for both Desktop and Mobile**#
+#### **Common Navbar Features for both Desktop and Mobile**
 
 ##### ***Logo***
 
