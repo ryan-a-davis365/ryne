@@ -91,6 +91,20 @@ The deployed site can be visited here: [RYNE](https://ryne-1e6e27341dc4.herokuap
         * [**Messages**](#messages)
         * [**Orders**](#orders)
         * [**Reviews**](#reviews)
+      * [**Future Features**](#future-features)
+        * [***Stock system***](#stock-system)
+        * [***Sales reports***](#sales-reports)
+        * [***Additional shipping choices***](#additional-shipping-choices)
+        * [***Additional payment methods***](#additional-payment-methods)
+        * [***Additional user account features***](#additional-user-account-features)
+        * [***Product options***](#product-options)
+        * [***Ticketing Sytem***](#ticketing-sytem)
+        * [***Currency***](#currency)
+    * [**Testing Phase**](#testing-phase)
+    * [**Deployment**](#deployment)
+    * [**Technologies used**](#technologies-used)
+    * [**Honorable Mentions**](#honorable-mentions)
+    * [**Credits**](#credits)
 
 # **Planning Phase**
 
@@ -728,6 +742,10 @@ Such as more images per item including linked products and related products. For
 #### ***Ticketing Sytem***
 
 Users can have a personal inbox when contacting the store regarding their issues.
+
+#### ***Currency***
+
+Users will have the option to change the currency of the site.
 
 ## **Testing Phase**
 
